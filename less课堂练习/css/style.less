@@ -1,0 +1,21 @@
+//@rem:40rem;
+@color:red;
+@width:200px;
+.corn(@rad:10px){
+    border-radius: @rad;
+}
+.box{
+    width:@width;
+    height:200px;
+    border: 2px solid @color;
+    .corn;
+    
+    .box1{ 
+        @width:100px;
+        width: @width;
+        height: 100px;
+        background: @color;
+        border: 1px solid green;
+        .corn(20px);
+    }
+}
